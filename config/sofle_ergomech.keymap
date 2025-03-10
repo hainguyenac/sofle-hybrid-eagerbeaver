@@ -31,7 +31,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "default";
+            label = "Base";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
@@ -45,7 +45,7 @@
 &kp ESC     &kp Q     &kp W     &kp E      &kp R          &kp T   &kp Y      &kp U      &kp I         &kp O     &kp P     &kp MINUS
 &kp TAB     &kp A     &kp S     &kp D      &kp F          &kp G   &kp H      &kp J      &kp K         &kp L     &kp SEMI  &kp SQT
 &kp CAPS    &kp Z     &kp X     &kp C      &kp V          &kp B   &kp N      &kp M      &kp COMMA     &kp DOT   &kp FSLH  &kp BACKSLASH
-&kp C_MUTE  &kp LGUI  &kp LALT  &kp LCTRL  &kp BACKSPACE  &tog 1  &kp ENTER  &kp SPACE  &kp RSHIFT    &kp LBKT  &kp RBKT
+&kp C_MUTE  &kp LGUI  &kp LALT  &kp LCTRL  &kp BACKSPACE  &tog 2  &kp ENTER  &kp SPACE  &kp RSHIFT    &kp LBKT  &kp RBKT
                                                                   &kp ENTER  &kp RIGHT  &kp UP_ARROW  &kp LEFT  &kp DOWN
             >;
 
@@ -80,7 +80,7 @@
         };
 
         raise_layer {
-            label = "raise";
+            label = "Num+Utility";
 
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
@@ -90,15 +90,17 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans     &trans    &trans    &trans     &trans   &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans        &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK      &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans     &trans    &trans    &trans     &trans   &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &trans     &trans    &trans    &trans     &trans
-                                                                                  &kp A      &kp B     &kp C     &kp D      &kp E
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp HOME   &kp N7  &kp N8    &kp N9    &kp PLUS         &kp MINUS
+&trans      &kp INS       &kp PSCRN      &kp K_CMENU   &trans        &trans        &kp PG_UP  &kp N4  &kp N5    &kp N6    &kp KP_MULTIPLY  &kp KP_DIVIDE
+&trans      &kp LALT      &kp C_AC_SAVE  &kp LSHFT     &kp K_FIND    &kp CLCK      &kp PG_DN  &kp N1  &kp N2    &kp N3    &kp DEL          &kp BSPC
+&trans      &kp K_UNDO    &kp K_CUT      &kp K_COPY    &kp K_PASTE   &trans        &kp END    &kp N0  &kp UP    &trans    &trans           &trans
+&trans      &trans        &trans         &trans        &trans        &tog 0        &trans     &trans  &kp LEFT  &kp DOWN  &kp RIGHT
+                                                                                   &kp A      &kp B   &kp C     &kp D     &kp E
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_AC_ZOOM_OUT C_AC_ZOOM_IN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         adjust_layer {
