@@ -1,5 +1,5 @@
 layers:
-  default:
+  Base:
   - '`'
   - '1'
   - '2'
@@ -53,7 +53,7 @@ layers:
   - LALT
   - LCTRL
   - BACKSPACE
-  - {t: lower, h: toggle}
+  - {t: Num+Utility, h: toggle}
   - ENTER
   - SPACE
   - RSHIFT
@@ -118,7 +118,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: default, h: toggle}
+  - {t: Base, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -129,19 +129,19 @@ layers:
   - PAGE UP
   - HOME
   - PAGE DOWN
-  raise:
+  Num+Utility:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - HOME
+  - '7'
+  - '8'
+  - '9'
+  - +
+  - '-'
   - {t: ▽, type: trans}
   - INS
   - PSCRN
@@ -149,21 +149,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
-  - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - '0'
-  - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - KP MULTIPLY
+  - KP DIVIDE
   - {t: ▽, type: trans}
   - LALT
-  - LCTRL
+  - AC SAVE
   - LSHFT
-  - {t: ▽, type: trans}
+  - FIND
   - CLCK
   - PG DN
-  - LEFT
-  - DOWN
-  - RIGHT
+  - '1'
+  - '2'
+  - '3'
   - DEL
   - BSPC
   - {t: ▽, type: trans}
@@ -172,6 +172,9 @@ layers:
   - COPY
   - PASTE
   - {t: ▽, type: trans}
+  - END
+  - '0'
+  - UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -180,15 +183,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: Base, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - RIGHT
   - A
   - B
   - C
