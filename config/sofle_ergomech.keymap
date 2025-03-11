@@ -134,12 +134,12 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp HOME   &kp N7  &kp N8    &kp N9    &kp PLUS         &kp MINUS
-&trans      &kp INS       &kp PSCRN     &trans        &trans        &trans        &kp PG_UP  &kp N4  &kp N5    &kp N6    &kp KP_MULTIPLY  &kp KP_DIVIDE
-&trans      &kp LALT      &kp LC(S)     &kp LSHFT     &kp LC(F)     &kp CLCK      &kp PG_DN  &kp N1  &kp N2    &kp N3    &kp DEL          &kp BSPC
-&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &trans        &kp END    &kp N0  &kp UP    &trans    &trans           &trans
-&trans      &trans        &trans        &trans        &trans        &to 0         &trans     &trans  &kp LEFT  &kp DOWN  &kp RIGHT
-                                                                                  &kp A      &kp B   &kp C     &kp D     &kp E
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp HOME   &kp N7  &kp N8    &kp N9    &kp PLUS         &kp MINUS
+&studio_unlock  &kp INS       &kp PSCRN     &trans        &trans        &trans        &kp PG_UP  &kp N4  &kp N5    &kp N6    &kp KP_MULTIPLY  &kp KP_DIVIDE
+&trans          &kp LALT      &kp LC(S)     &kp LSHFT     &kp LC(F)     &kp CLCK      &kp PG_DN  &kp N1  &kp N2    &kp N3    &kp DEL          &kp BSPC
+&trans          &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &trans        &kp END    &kp N0  &kp UP    &trans    &trans           &trans
+&trans          &trans        &trans        &trans        &trans        &to 0         &trans     &trans  &kp LEFT  &kp DOWN  &kp RIGHT
+                                                                                      &kp A      &kp B   &kp C     &kp D     &kp E
             >;
 
             sensor-bindings =
