@@ -156,9 +156,9 @@ layers:
   - KP DIVIDE
   - {t: ▽, type: trans}
   - LALT
-  - AC SAVE
+  - Ctl+S
   - LSHFT
-  - AC FIND
+  - Ctl+F
   - CLCK
   - PG DN
   - '1'
@@ -167,10 +167,10 @@ layers:
   - DEL
   - BSPC
   - {t: ▽, type: trans}
-  - AC UNDO
-  - AC CUT
-  - AC COPY
-  - AC PASTE
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - {t: ▽, type: trans}
   - END
   - '0'
