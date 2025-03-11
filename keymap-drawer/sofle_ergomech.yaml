@@ -142,7 +142,7 @@ layers:
   - '9'
   - +
   - '-'
-  - {t: ▽, type: trans}
+  - '&studio_unlock'
   - INS
   - PSCRN
   - {t: ▽, type: trans}
